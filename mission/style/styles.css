@@ -4,6 +4,14 @@ body{
     align-items: center;
 }
 
+.dark{
+    margin: auto;
+    max-width: 600px;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
 .title{
     text-align: center;
     letter-spacing: 4px;
@@ -16,6 +24,12 @@ h1{
 
 h2{
     color: #006EB6;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.dark h2{
+    color: #4f9acf;
     font-size: 16px;
     margin-bottom: 0px;
 }
@@ -34,3 +48,4 @@ img{
     margin: auto;
     padding-top: 50px;
 }
+
