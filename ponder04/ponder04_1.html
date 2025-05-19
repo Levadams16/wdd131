@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Levi Adams"/>
+    <title>Events practice: ToDos</title>
+    <style>
+      .todoList {
+        width: 300px;
+      }
+      .todoList > li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid;
+        padding: 0.5em;
+      }
+      .todoList p {
+        margin: 0;
+      }
+      .todoList span {
+        cursor: pointer;
+      }
+      .strike {
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ToDos</h1>
+    <section>
+      <label for="todo">Enter Task</label>
+      <input name="todo" id="todo" />
+      <button id="submitTask">Enter</button>
+    </section>
+    <ul id="todos" class="todoList"></ul>
+    <script src="events.js"></script>
+  </body>
+</html>
