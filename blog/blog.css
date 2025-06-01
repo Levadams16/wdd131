@@ -25,9 +25,11 @@ main {
 
 .book {
     display: grid;
+    grid-template-columns: 1fr 3fr;
     gap: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid #EFC69B;
 }
 
 .book-meta, .book-meta2 {
