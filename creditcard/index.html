@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <script src="card.js" defer></script>
+    <link href="card.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <form id="credit-card">
+        <div id="error-message" style="color: red; font-weight: bold; margin-bottom: 10px;"></div>
+        <div id="back">
+            <div class="black"></div>
+            <h1 id="cvc">CVC/CVV</h1>
+            <input type="text" id="cvc_input" placeholder="XXX" required>
+        </div>
+        <div id="front">
+            <h1 id="total">Total: <strong>$199</strong></h1>
+            <h1 id="number">CARD NUMBER</h1>
+            <input type="text" id="card_number" placeholder="1234 5678 9101 1020" required>
+            <h1 id="holder">CARD HOLDER</h1>
+            <input type="text" id="card_holder" placeholder="John Doe" required>
+            <h1 id="expiration">EXPIRATION</h1>
+            <input type="text" id="month_input" placeholder="MM" required>
+            <input type="text" id="year_input" placeholder="YY" required>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>

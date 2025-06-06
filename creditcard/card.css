@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    height: 1600px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: contents;
+}
+
+#front {
+    background-color: lightgray;
+    grid-column: 30 / span 33;
+    grid-row: 10 / span 21;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#back {
+    background-color: lightgrey;
+    grid-column: 40 / span 33;
+    grid-row: 13 / span 21;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+h1 {
+    font-size: 1em;
+    color: black;
+    font-family: roboto, sans-serif;
+}
+
+#total {
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+}
+
+#number {
+    grid-column: 2 / span 3;
+    grid-row: 4 / 5;
+}
+
+#holder {
+    grid-column: 2 / span 3;
+    grid-row: 6 / 7;
+}
+
+#expiration {
+    grid-column: 6 / span 2;
+    grid-row: 6 / 7;
+}
+
+#cvc {
+    grid-column: 9 / 10;
+    grid-row: 7 / 8;
+}
+
+.black {
+    grid-row: 2 / 4;
+    grid-column: 1 / 11;
+    background-color: black;
+}
+
+#card_number {
+    grid-column: 2 / span 4;
+    grid-row: 5 / 6;
+    height: 30px;
+}
+
+#card_holder {
+    grid-column: 2 / span 3;
+    grid-row: 7 / 8;
+    height: 30px;
+}
+
+#month_input {
+    grid-column: 6 / span 2;
+    grid-row: 7 / 8;
+    height: 30px;
+    width: 30px;
+}
+
+#year_input {
+    grid-column: 7 / 9;
+    grid-row: 7 / 8;
+    height: 30px;
+    width: 50px;
+}
+
+#cvc_input {
+    grid-column: 9 / 10;
+    grid-row: 8 / 9;
+    width: 30px;
+}
+
+#submit {
+    grid-column: 65 / 69;
+    grid-row: 35 / 36;
+}
