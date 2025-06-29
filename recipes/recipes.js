@@ -78,6 +78,22 @@ function filterRecipes(query) {
   return sorted;
 }
 
+function filter(query) {
+  const filtered = recipes.filter(recipe => {
+    const inName = recipe.name.toLowerCase().includes(query);
+    const inDescription = recipe.description.toLowerCase().includes(query);
+    const inTags = recipe.tags.find(tag => tag.toLowerCase().includes(query));
+    const inIngredients = false;
+    return inName || inDescription || inTags || inIngredients;
+  });
+
+  const sorted = filtered.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
+
+  return sorted;
+}
+
 function searchHandler(e) {
   e.preventDefault();
   const queryInput = document.querySelector("input[name='query']");
@@ -85,6 +101,9 @@ function searchHandler(e) {
   const filteredList = filterRecipes(query);
   renderRecipes(filteredList);
 }
+
+const searchForm = document.querySelector("form");
+searchForm.addEventListener("submit", searchHandler);
 
 function init() {
   const recipe = getRandomListEntry(recipes);
