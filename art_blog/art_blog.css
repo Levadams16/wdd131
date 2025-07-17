@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+    --primary-color: #F2E2D2;
+    --secondary-color: #39393a;
+    --accent1-color: #46b1c9;
+    --accent2-color: #f9627d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+  position: relative;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+header > button.create {
+  position: absolute;
+  right: 30px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+img {
+    max-width: 100px;
+}
+
+#create_story {
+    border-bottom: 3px solid #39393a;
+}
+
+h1 {
+    font-family: Roboto;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #39393a;
+    font-size: 3em;
+}
+
+#story_input {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+label {
+    font-size: 1.7em;
+    font-family: Roboto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #39393a;
+}
+
+#title {
+    width: 400px;
+    height: 1.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#genre {
+    width: 100px;
+    height: 2em;
+    border-radius: 5px;
+}
+
+#editor-container {
+    height: 150px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+h2 {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+footer {
+  background-color: #39393a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+footer img {
+  max-width: 60px;
+}
+
+.footer-nav button {
+  background: none;
+  border: none;
+  color: #F2E2D2;
+  font-family: Lato;
+  font-size: 1.2em;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #46b1c9;
+}
+
+#saved_stories {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.saved-story-item {
+    text-align: center;
+}
+
+.saved-story-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.saved-story-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.saved-story-item button {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.saved-story-item .delete-btn {
+    background-color: var(--accent2-color);
+}
+
+.saved-story-item .delete-btn:hover {
+    background-color: #e05770;
+}
+
+#editor-container {
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    background-color: #409fb4;
+}

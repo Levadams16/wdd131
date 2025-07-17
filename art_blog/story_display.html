@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Display - Art Blog</title>
+    <link type="text/css" rel="stylesheet" href="art_blog.css">
+    <link type="text/css" rel="stylesheet" href="story_display.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="story_display.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="img_container">
+            <img src="images/Logo maker project.png" alt="Logo">
+        </div>
+        <button class="create" onclick="window.close()">Close</button>
+    </header>
+    <main>
+        <div id="loading" class="loading-message">
+            <i class="fas fa-spinner fa-spin"></i> Loading story...
+        </div>
+        <div id="story-display" class="story-container" style="display: none;">
+            <div class="story-header">
+                <h1 id="story-title" class="story-title"></h1>
+                <div class="story-meta">
+                    <span id="story-genre" class="genre-badge"></span>
+                    <span id="story-date" class="story-date"></span>
+                </div>
+            </div>
+            <div id="story-content" class="story-content"></div>
+            <div class="story-actions">
+                <button class="back-button" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i> Back to Blog
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/Logo maker project.png" alt="Logo">
+        <div class="footer-nav">
+            <button onclick="goBack()">Back to Blog</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
