@@ -106,6 +106,12 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 650px){
+    .story-content img {
+        min-width: 300px;
+}
+}
+
 @media print {
     .back-button, .print-button {
         display: none;

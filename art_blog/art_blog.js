@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toolbar.querySelector('.ql-image')?.setAttribute('aria-label', 'Insert Image');
     toolbar.querySelector('.ql-list[value="ordered"]')?.setAttribute('aria-label', 'Ordered List');
     toolbar.querySelector('.ql-list[value="bullet"]')?.setAttribute('aria-label', 'Bullet List');
+    toolbar.querySelector('.ql-picker-label')?.setAttribute('aria-label', 'Font Type Menu');
 
     quill.on('text-change', function() {
         var text = quill.getText().trim();
